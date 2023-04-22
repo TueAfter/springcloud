@@ -1,2 +1,15 @@
 server:
   port: 8888
+  
+spring:
+  application:
+    name: userconsul8888
+  cloud:
+    consul:
+      port: 8500
+      discovery:
+        register-health-check: false
+
+feign:
+  circuitbreaker:
+    enabled: true
